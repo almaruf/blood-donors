@@ -1,0 +1,10 @@
+<div class="ui-widget-content" >
+    <?php echo $this->markup()->well($this->exception->getMessage()); ?>        
+    <?php if ('production' != APPLICATION_ENV){ ?>                                            
+        <h3><?php echo $this->message ?></h3>
+        <pre><?php echo $this->exception->getTraceAsString() ?></pre>
+
+        <h3>Request Parameters:</h3>
+        <pre><?php echo var_export($this->request->getParams(), true) ?></pre>
+    <?php } ?>				
+</div>
