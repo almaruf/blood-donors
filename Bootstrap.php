@@ -20,7 +20,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		$view = $layout->getView();
 		$view->doctype('XHTML1_STRICT');
 		$view->headTitle()->setSeparator(' - ');		
-		$view->headTitle('EZY-Restaurant');
+		$view->headTitle('Blood Donor\'s of Bangladesh');
 		$view->headMeta()->appendHttpEquiv('Content-Type', CONTENT_TYPE );		
 	}
     
